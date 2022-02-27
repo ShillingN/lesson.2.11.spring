@@ -19,12 +19,12 @@ public class ProductController {
     }
 
     @GetMapping("/add")
-    public Product addProduct(@RequestParam List productId) {
+    public Product addProduct(@RequestParam List<Integer> productId) {
         return productService.add(productId);
     }
 
     @GetMapping("/get")
-    public List<List> getProduct() {
+    public List<List<Integer>> getProduct() {
         return productService.get();
     }
 }

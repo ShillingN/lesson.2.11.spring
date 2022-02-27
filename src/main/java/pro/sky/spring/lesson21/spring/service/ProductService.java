@@ -5,7 +5,7 @@ import pro.sky.spring.lesson21.spring.data.Product;
 import java.util.List;
 
 public interface ProductService {
-    Product add(List productId);
+    Product add(List<Integer> productId);
 
-    List<List> get();
+    List<List<Integer>> get();
 }

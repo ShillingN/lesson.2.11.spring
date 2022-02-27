@@ -16,11 +16,11 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
-    public Product add(List productId) {
+    public Product add(List<Integer> productId) {
         return shoppingList.add(productId);
     }
 
-    public List<List> get() {
+    public List<List<Integer>> get() {
         return shoppingList.getShoppingList();
     }
 }

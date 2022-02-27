@@ -11,19 +11,19 @@ import java.util.List;
 @Repository
 public class ShoppingList {
 
-    private final List<List> shoppingList;
+    private final List<List<Integer>> shoppingList;
 
     public ShoppingList() {
         this.shoppingList = new ArrayList<>();
     }
 
-    public Product add(List productId) {
+    public Product add(List<Integer> productId) {
         Product product = new Product(productId);
         shoppingList.add(productId);
         return product;
     }
 
-    public List<List> getShoppingList() {
+    public List<List<Integer>> getShoppingList() {
         return shoppingList;
     }
 
